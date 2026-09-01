@@ -1,0 +1,2192 @@
+[
+ {
+  "id": 1,
+  "text": "The fool doth think he is wise, but the wise man knows himself to be a fool.",
+  "zh": "愚者自以为智，智者自知其愚。",
+  "author": "William Shakespeare",
+  "work": "As You Like It",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 2,
+  "text": "All the world's a stage, and all the men and women merely players.",
+  "zh": "整个世界是个舞台，男男女女不过是演员。",
+  "author": "William Shakespeare",
+  "work": "As You Like It",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 3,
+  "text": "To be, or not to be: that is the question.",
+  "zh": "生存还是毁灭，这是一个值得思考的问题。",
+  "author": "William Shakespeare",
+  "work": "Hamlet",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 4,
+  "text": "This above all: to thine own self be true.",
+  "zh": "最重要的是：对自己要诚实。",
+  "author": "William Shakespeare",
+  "work": "Hamlet",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 5,
+  "text": "Cowards die many times before their deaths; the valiant never taste of death but once.",
+  "zh": "懦夫死前已死过多次，勇者一生只尝一次死亡。",
+  "author": "William Shakespeare",
+  "work": "Julius Caesar",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 6,
+  "text": "The fault, dear Brutus, is not in our stars, but in ourselves.",
+  "zh": "布鲁图斯，错不在星宿，而在我们自己。",
+  "author": "William Shakespeare",
+  "work": "Julius Caesar",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 7,
+  "text": "Men at some time are masters of their fates.",
+  "zh": "人有时是命运的主宰。",
+  "author": "William Shakespeare",
+  "work": "Julius Caesar",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 8,
+  "text": "Give every man thy ear, but few thy voice.",
+  "zh": "多听少说。",
+  "author": "William Shakespeare",
+  "work": "Hamlet",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 9,
+  "text": "Brevity is the soul of wit.",
+  "zh": "简洁是智慧的灵魂。",
+  "author": "William Shakespeare",
+  "work": "Hamlet",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 10,
+  "text": "There is nothing either good or bad, but thinking makes it so.",
+  "zh": "没有绝对的善恶，是人的思想使然。",
+  "author": "William Shakespeare",
+  "work": "Hamlet",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 11,
+  "text": "What's done cannot be undone.",
+  "zh": "木已成舟，无法挽回。",
+  "author": "William Shakespeare",
+  "work": "Macbeth",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 12,
+  "text": "Love looks not with the eyes, but with the mind.",
+  "zh": "爱情不用眼睛，而用心灵去看。",
+  "author": "William Shakespeare",
+  "work": "A Midsummer Night's Dream",
+  "tags": [
+   "love"
+  ]
+ },
+ {
+  "id": 13,
+  "text": "If music be the food of love, play on.",
+  "zh": "倘若音乐是爱情的食粮，那就奏下去吧。",
+  "author": "William Shakespeare",
+  "work": "Twelfth Night",
+  "tags": [
+   "love"
+  ]
+ },
+ {
+  "id": 14,
+  "text": "Parting is such sweet sorrow.",
+  "zh": "离别是如此甜蜜的忧伤。",
+  "author": "William Shakespeare",
+  "work": "Romeo and Juliet",
+  "tags": [
+   "love"
+  ]
+ },
+ {
+  "id": 15,
+  "text": "A rose by any other name would smell as sweet.",
+  "zh": "玫瑰即使换名，也依然芬芳。",
+  "author": "William Shakespeare",
+  "work": "Romeo and Juliet",
+  "tags": [
+   "love"
+  ]
+ },
+ {
+  "id": 16,
+  "text": "Our doubts are traitors, and make us lose the good we oft might win.",
+  "zh": "我们的疑虑是叛徒，使我们错失本可赢得的好处。",
+  "author": "William Shakespeare",
+  "work": "Measure for Measure",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 17,
+  "text": "What's past is prologue.",
+  "zh": "凡是过往，皆为序章。",
+  "author": "William Shakespeare",
+  "work": "The Tempest",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 18,
+  "text": "When sorrows come, they come not single spies, but in battalions.",
+  "zh": "忧患来袭，从不是单个探子，而是成群大军。",
+  "author": "William Shakespeare",
+  "work": "Hamlet",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 19,
+  "text": "Some are born great, some achieve greatness, and some have greatness thrust upon them.",
+  "zh": "有人生而伟大，有人成就伟大，有人被赋予伟大。",
+  "author": "William Shakespeare",
+  "work": "Twelfth Night",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 20,
+  "text": "Knowledge is power.",
+  "zh": "知识就是力量。",
+  "author": "Francis Bacon",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 21,
+  "text": "Reading maketh a full man; conference a ready man; and writing an exact man.",
+  "zh": "读书使人充实，讨论使人机智，写作使人精确。",
+  "author": "Francis Bacon",
+  "work": "Of Studies",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 22,
+  "text": "Some books are to be tasted, others to be swallowed, and some few to be chewed and digested.",
+  "zh": "有的书浅尝辄止，有的囫囵吞下，少数须咀嚼消化。",
+  "author": "Francis Bacon",
+  "work": "Of Studies",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 23,
+  "text": "A wise man will make more opportunities than he finds.",
+  "zh": "智者创造的机会多于他所发现的。",
+  "author": "Francis Bacon",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 24,
+  "text": "Studies serve for delight, for ornament, and for ability.",
+  "zh": "读书足以怡情，足以傅彩，足以长才。",
+  "author": "Francis Bacon",
+  "work": "Of Studies",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 25,
+  "text": "Revenge is a kind of wild justice.",
+  "zh": "复仇是一种野生的公道。",
+  "author": "Francis Bacon",
+  "work": "Of Revenge",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 26,
+  "text": "Whoever is delighted in solitude is either a wild beast or a god.",
+  "zh": "喜独处者，非野兽即神灵。",
+  "author": "Francis Bacon",
+  "work": "Essays",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 27,
+  "text": "Hope is a good breakfast, but it is a bad supper.",
+  "zh": "希望是美味的早餐，却是糟糕的晚餐。",
+  "author": "Francis Bacon",
+  "work": "",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 28,
+  "text": "The unexamined life is not worth living.",
+  "zh": "未经审视的人生不值得过。",
+  "author": "Socrates",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 29,
+  "text": "The only true wisdom is in knowing you know nothing.",
+  "zh": "唯一的真智慧，是知道自己一无所知。",
+  "author": "Socrates",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 30,
+  "text": "Education is the kindling of a flame, not the filling of a vessel.",
+  "zh": "教育不是注满一桶水，而是点燃一把火。",
+  "author": "Socrates",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 31,
+  "text": "I know that I am intelligent, because I know that I know nothing.",
+  "zh": "我知我智，因我知我之无知。",
+  "author": "Socrates",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 32,
+  "text": "We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light.",
+  "zh": "我们易原谅怕黑的孩子；人生真正的悲剧，是成人害怕光明。",
+  "author": "Plato",
+  "work": "The Republic",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 33,
+  "text": "Wise men speak because they have something to say; fools because they have to say something.",
+  "zh": "智者发言因有话要说，愚者发言因不得不说。",
+  "author": "Plato",
+  "work": "",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 34,
+  "text": "The beginning is the most important part of the work.",
+  "zh": "开端是工作中最重要的部分。",
+  "author": "Plato",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 35,
+  "text": "Necessity is the mother of invention.",
+  "zh": "需要是发明之母。",
+  "author": "Plato",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 36,
+  "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.",
+  "zh": "我们重复做什么，便是什么人。卓越不是一时之举，而是一种习惯。",
+  "author": "Aristotle",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 37,
+  "text": "Knowing yourself is the beginning of all wisdom.",
+  "zh": "认识自己是一切智慧的开端。",
+  "author": "Aristotle",
+  "work": "",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 38,
+  "text": "Quality is not an act, it is a habit.",
+  "zh": "品质不是一时之举，而是习惯。",
+  "author": "Aristotle",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 39,
+  "text": "Patience is bitter, but its fruit is sweet.",
+  "zh": "耐心苦涩，其果甘甜。",
+  "author": "Aristotle",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 40,
+  "text": "It is the mark of an educated mind to be able to entertain a thought without accepting it.",
+  "zh": "受过教育者的标志，是能容纳一种思想而不必接受它。",
+  "author": "Aristotle",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 41,
+  "text": "Friendship is a single soul dwelling in two bodies.",
+  "zh": "友谊是一个灵魂居于两个躯体。",
+  "author": "Aristotle",
+  "work": "",
+  "tags": [
+   "friendship"
+  ]
+ },
+ {
+  "id": 42,
+  "text": "Courage is the first of human qualities because it is the quality which guarantees the others.",
+  "zh": "勇气是人首要的品质，因为它保障其余品质。",
+  "author": "Aristotle",
+  "work": "",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 43,
+  "text": "It does not matter how slowly you go as long as you do not stop.",
+  "zh": "只要不停下，走得慢也无妨。",
+  "author": "Confucius",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 44,
+  "text": "Learning without thought is labor lost; thought without learning is perilous.",
+  "zh": "学而不思则罔，思而不学则殆。",
+  "author": "Confucius",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 45,
+  "text": "What you do not want done to yourself, do not do to others.",
+  "zh": "己所不欲，勿施于人。",
+  "author": "Confucius",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 46,
+  "text": "The superior man is modest in his speech but exceeds in his actions.",
+  "zh": "君子讷于言而敏于行。",
+  "author": "Confucius",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 47,
+  "text": "Real knowledge is to know the extent of one's ignorance.",
+  "zh": "真正的知识，是知道自己无知的程度。",
+  "author": "Confucius",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 48,
+  "text": "Wherever you go, go with all your heart.",
+  "zh": "无论去何处，都要全心全意。",
+  "author": "Confucius",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 49,
+  "text": "To see what is right and not do it is want of courage.",
+  "zh": "见义不为，是无勇也。",
+  "author": "Confucius",
+  "work": "",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 50,
+  "text": "He who learns but does not think is lost; he who thinks but does not learn is in danger.",
+  "zh": "学而不思则罔，思而不学则殆。",
+  "author": "Confucius",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 51,
+  "text": "A journey of a thousand miles begins with a single step.",
+  "zh": "千里之行，始于足下。",
+  "author": "Lao Tzu",
+  "work": "Tao Te Ching",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 52,
+  "text": "Nature does not hurry, yet everything is accomplished.",
+  "zh": "自然从不匆忙，却成就万事。",
+  "author": "Lao Tzu",
+  "work": "Tao Te Ching",
+  "tags": [
+   "nature"
+  ]
+ },
+ {
+  "id": 53,
+  "text": "Knowing others is intelligence; knowing yourself is true wisdom.",
+  "zh": "知人者智，自知者明。",
+  "author": "Lao Tzu",
+  "work": "Tao Te Ching",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 54,
+  "text": "The soft overcomes the hard; the gentle overcomes the rigid.",
+  "zh": "柔弱胜刚强。",
+  "author": "Lao Tzu",
+  "work": "Tao Te Ching",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 55,
+  "text": "When I let go of what I am, I become what I might be.",
+  "zh": "当我放下所是，便成为所能是。",
+  "author": "Lao Tzu",
+  "work": "Tao Te Ching",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 56,
+  "text": "Do the difficult things while they are easy and do the great things while they are small.",
+  "zh": "难事于易时为之，大事于小时为之。",
+  "author": "Lao Tzu",
+  "work": "Tao Te Ching",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 57,
+  "text": "Silence is a source of great strength.",
+  "zh": "沉默是巨大的力量之源。",
+  "author": "Lao Tzu",
+  "work": "Tao Te Ching",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 58,
+  "text": "The supreme art of war is to subdue the enemy without fighting.",
+  "zh": "不战而屈人之兵，善之善者也。",
+  "author": "Sun Tzu",
+  "work": "The Art of War",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 59,
+  "text": "Know the enemy and know yourself, and you need not fear the result of a hundred battles.",
+  "zh": "知己知彼，百战不殆。",
+  "author": "Sun Tzu",
+  "work": "The Art of War",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 60,
+  "text": "Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.",
+  "zh": "胜兵先胜而后求战，败兵先战而后求胜。",
+  "author": "Sun Tzu",
+  "work": "The Art of War",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 61,
+  "text": "In the midst of chaos, there is also opportunity.",
+  "zh": "乱中亦有机。",
+  "author": "Sun Tzu",
+  "work": "The Art of War",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 62,
+  "text": "Opportunities multiply as they are seized.",
+  "zh": "机遇在被把握时倍增。",
+  "author": "Sun Tzu",
+  "work": "The Art of War",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 63,
+  "text": "You have power over your mind - not outside events. Realize this, and you will find strength.",
+  "zh": "你掌控的是自己的心，而非外界之事。明白这点，你便有了力量。",
+  "author": "Marcus Aurelius",
+  "work": "Meditations",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 64,
+  "text": "The happiness of your life depends upon the quality of your thoughts.",
+  "zh": "你生活的幸福，取决于你思想的质量。",
+  "author": "Marcus Aurelius",
+  "work": "Meditations",
+  "tags": [
+   "happiness"
+  ]
+ },
+ {
+  "id": 65,
+  "text": "Waste no more time arguing about what a good man should be. Be one.",
+  "zh": "别再争论好人该是什么样，去做一个吧。",
+  "author": "Marcus Aurelius",
+  "work": "Meditations",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 66,
+  "text": "The soul becomes dyed with the color of its thoughts.",
+  "zh": "灵魂会染上思想的颜色。",
+  "author": "Marcus Aurelius",
+  "work": "Meditations",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 67,
+  "text": "Very little is needed to make a happy life; it is all within yourself, in your way of thinking.",
+  "zh": "幸福人生所需极少，全在于你自己的心境。",
+  "author": "Marcus Aurelius",
+  "work": "Meditations",
+  "tags": [
+   "happiness"
+  ]
+ },
+ {
+  "id": 68,
+  "text": "If it is not right, do not do it; if it is not true, do not say it.",
+  "zh": "若不正当，就别做；若不真实，就别说。",
+  "author": "Marcus Aurelius",
+  "work": "Meditations",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 69,
+  "text": "Confine yourself to the present.",
+  "zh": "把自己局限于当下。",
+  "author": "Marcus Aurelius",
+  "work": "Meditations",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 70,
+  "text": "The impediment to action advances action. What stands in the way becomes the way.",
+  "zh": "阻碍行动者，反促进行动；挡路之物，反成道路。",
+  "author": "Marcus Aurelius",
+  "work": "Meditations",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 71,
+  "text": "It is not that we have a short time to live, but that we waste a lot of it.",
+  "zh": "我们不是寿命短，而是浪费了太多。",
+  "author": "Seneca",
+  "work": "",
+  "tags": [
+   "time"
+  ]
+ },
+ {
+  "id": 72,
+  "text": "Luck is what happens when preparation meets opportunity.",
+  "zh": "运气，是准备遇上机会时的产物。",
+  "author": "Seneca",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 73,
+  "text": "Every new beginning comes from some other beginning's end.",
+  "zh": "每一个新的开始，都源自另一个开始的终结。",
+  "author": "Seneca",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 74,
+  "text": "We suffer more often in imagination than in reality.",
+  "zh": "我们常在想象中比在现实中受更多苦。",
+  "author": "Seneca",
+  "work": "",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 75,
+  "text": "He who is brave is free.",
+  "zh": "勇敢者即自由人。",
+  "author": "Seneca",
+  "work": "",
+  "tags": [
+   "freedom"
+  ]
+ },
+ {
+  "id": 76,
+  "text": "A gem cannot be polished without friction, nor a man perfected without trials.",
+  "zh": "宝石不经摩擦不能发光，人不经磨难不能完善。",
+  "author": "Seneca",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 77,
+  "text": "While we wait for life, life passes.",
+  "zh": "我们等待生活时，生活已悄然流逝。",
+  "author": "Seneca",
+  "work": "",
+  "tags": [
+   "time"
+  ]
+ },
+ {
+  "id": 78,
+  "text": "Gratitude is not only the greatest of virtues, but the parent of all others.",
+  "zh": "感恩不仅是最伟大的德性，更是其余一切之母。",
+  "author": "Cicero",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 79,
+  "text": "A room without books is like a body without a soul.",
+  "zh": "没有书的房间，犹如没有灵魂的躯体。",
+  "author": "Cicero",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 80,
+  "text": "While there's life, there's hope.",
+  "zh": "一息若存，希望不灭。",
+  "author": "Cicero",
+  "work": "",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 81,
+  "text": "The life of the dead is placed in the memory of the living.",
+  "zh": "逝者的生命，安放于生者的记忆中。",
+  "author": "Cicero",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 82,
+  "text": "Friendship improves happiness and abates misery, by doubling our joy and dividing our grief.",
+  "zh": "友谊增益欢乐、减轻悲哀，因它倍增喜悦、平分忧伤。",
+  "author": "Cicero",
+  "work": "",
+  "tags": [
+   "friendship"
+  ]
+ },
+ {
+  "id": 83,
+  "text": "Justice is the virtue of the soul which gives to each his due.",
+  "zh": "正义是灵魂之德，使人各得其所。",
+  "author": "Cicero",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 84,
+  "text": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+  "zh": "与我们内心之物相比，身后与眼前的一切都微不足道。",
+  "author": "Ralph Waldo Emerson",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 85,
+  "text": "The only person you are destined to become is the person you decide to be.",
+  "zh": "你注定成为的，是你决心成为的人。",
+  "author": "Ralph Waldo Emerson",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 86,
+  "text": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+  "zh": "不要走别人铺好的路，去没有路的地方，留下足迹。",
+  "author": "Ralph Waldo Emerson",
+  "work": "",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 87,
+  "text": "Our greatest glory is not in never falling, but in rising every time we fall.",
+  "zh": "我们最大的荣耀不在于从未跌倒，而在于每次跌倒后都能站起。",
+  "author": "Ralph Waldo Emerson",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 88,
+  "text": "A hero is no braver than an ordinary man, but he is braver five minutes longer.",
+  "zh": "英雄并不比常人更勇敢，只是多勇敢了五分钟。",
+  "author": "Ralph Waldo Emerson",
+  "work": "",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 89,
+  "text": "Write it on your heart that every day is the best day in the year.",
+  "zh": "把「每一天都是一年中最好的一天」写在心上。",
+  "author": "Ralph Waldo Emerson",
+  "work": "",
+  "tags": [
+   "happiness"
+  ]
+ },
+ {
+  "id": 90,
+  "text": "For every minute you are angry you lose sixty seconds of happiness.",
+  "zh": "你每生气一分钟，就失去六十秒的幸福。",
+  "author": "Ralph Waldo Emerson",
+  "work": "",
+  "tags": [
+   "happiness"
+  ]
+ },
+ {
+  "id": 91,
+  "text": "What you do speaks so loud that I cannot hear what you say.",
+  "zh": "你的行动如此响亮，让我听不见你的言语。",
+  "author": "Ralph Waldo Emerson",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 92,
+  "text": "Self-reliance is the only road to true freedom.",
+  "zh": "自立是通往真正自由的唯一道路。",
+  "author": "Ralph Waldo Emerson",
+  "work": "",
+  "tags": [
+   "freedom"
+  ]
+ },
+ {
+  "id": 93,
+  "text": "Nothing great was ever achieved without enthusiasm.",
+  "zh": "没有热情，便无一伟大成就。",
+  "author": "Ralph Waldo Emerson",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 94,
+  "text": "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate.",
+  "zh": "生活的目的不是快乐，而是有所作为、有所尊荣、富有怜悯。",
+  "author": "Ralph Waldo Emerson",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 95,
+  "text": "The mass of men lead lives of quiet desperation.",
+  "zh": "大多数人过着平静的绝望生活。",
+  "author": "Henry David Thoreau",
+  "work": "Walden",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 96,
+  "text": "Go confidently in the direction of your dreams. Live the life you have imagined.",
+  "zh": "自信地朝梦想方向前进，去过你想象的生活。",
+  "author": "Henry David Thoreau",
+  "work": "Walden",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 97,
+  "text": "Our life is frittered away by detail. Simplify, simplify.",
+  "zh": "生活被琐碎消耗。简化，再简化。",
+  "author": "Henry David Thoreau",
+  "work": "Walden",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 98,
+  "text": "All good things are wild and free.",
+  "zh": "一切美好的事物都是野性而自由的。",
+  "author": "Henry David Thoreau",
+  "work": "Walking",
+  "tags": [
+   "freedom"
+  ]
+ },
+ {
+  "id": 99,
+  "text": "Rather than love, than money, than fame, give me truth.",
+  "zh": "比起爱、金钱、名声，我更渴望真理。",
+  "author": "Henry David Thoreau",
+  "work": "Walden",
+  "tags": [
+   "truth"
+  ]
+ },
+ {
+  "id": 100,
+  "text": "Not until we are lost do we begin to understand ourselves.",
+  "zh": "直到迷失，我们才开始了解自己。",
+  "author": "Henry David Thoreau",
+  "work": "Walden",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 101,
+  "text": "The price of anything is the amount of life you exchange for it.",
+  "zh": "任何事物的代价，是你用以交换的生命。",
+  "author": "Henry David Thoreau",
+  "work": "Walden",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 102,
+  "text": "Live your beliefs and you can turn the world around.",
+  "zh": "践行你的信念，你便能改变世界。",
+  "author": "Henry David Thoreau",
+  "work": "",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 103,
+  "text": "Well done is better than well said.",
+  "zh": "做得好胜过说得好。",
+  "author": "Benjamin Franklin",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 104,
+  "text": "Early to bed and early to rise makes a man healthy, wealthy, and wise.",
+  "zh": "早睡早起使人健康、富裕又聪明。",
+  "author": "Benjamin Franklin",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 105,
+  "text": "An investment in knowledge pays the best interest.",
+  "zh": "对知识的投资，回报最丰厚。",
+  "author": "Benjamin Franklin",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 106,
+  "text": "By failing to prepare, you are preparing to fail.",
+  "zh": "不准备，就是在准备失败。",
+  "author": "Benjamin Franklin",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 107,
+  "text": "Tell me and I forget. Teach me and I remember. Involve me and I learn.",
+  "zh": "告诉我，我会忘；教给我，我会记；让我参与，我才学会。",
+  "author": "Benjamin Franklin",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 108,
+  "text": "Lost time is never found again.",
+  "zh": "失去的时间再也找不回来。",
+  "author": "Benjamin Franklin",
+  "work": "",
+  "tags": [
+   "time"
+  ]
+ },
+ {
+  "id": 109,
+  "text": "Energy and persistence conquer all things.",
+  "zh": "精力与毅力能征服一切。",
+  "author": "Benjamin Franklin",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 110,
+  "text": "Honesty is the best policy.",
+  "zh": "诚实为上策。",
+  "author": "Benjamin Franklin",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 111,
+  "text": "Nearly all men can stand adversity, but if you want to test a man's character, give him power.",
+  "zh": "几乎所有人都经得起逆境，但要想考验一个人的品格，给他权力。",
+  "author": "Abraham Lincoln",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 112,
+  "text": "Whatever you are, be a good one.",
+  "zh": "无论你是什么，都要做个好样的。",
+  "author": "Abraham Lincoln",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 113,
+  "text": "I walk slowly, but I never walk backward.",
+  "zh": "我走得很慢，但从不后退。",
+  "author": "Abraham Lincoln",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 114,
+  "text": "Those who deny freedom to others deserve it not for themselves.",
+  "zh": "剥夺他人自由的人，自己也不配享有自由。",
+  "author": "Abraham Lincoln",
+  "work": "",
+  "tags": [
+   "freedom"
+  ]
+ },
+ {
+  "id": 115,
+  "text": "My great concern is not whether you have failed, but whether you are content with your failure.",
+  "zh": "我担心的不是你失败，而是你安于失败。",
+  "author": "Abraham Lincoln",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 116,
+  "text": "Character is like a tree and reputation is its shadow.",
+  "zh": "品格如树，声誉如影。",
+  "author": "Abraham Lincoln",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 117,
+  "text": "You cannot escape the responsibility of tomorrow by evading it today.",
+  "zh": "你无法用今天的逃避，躲开明天的责任。",
+  "author": "Abraham Lincoln",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 118,
+  "text": "Most folks are about as happy as they make up their minds to be.",
+  "zh": "大多数人的快乐程度，取决于他们下决心要快乐的程度。",
+  "author": "Abraham Lincoln",
+  "work": "",
+  "tags": [
+   "happiness"
+  ]
+ },
+ {
+  "id": 119,
+  "text": "Knowing is not enough; we must apply. Willing is not enough; we must do.",
+  "zh": "知道不够，必须运用；意愿不够，必须行动。",
+  "author": "Johann Wolfgang von Goethe",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 120,
+  "text": "Whatever you can do or dream you can, begin it. Boldness has genius, power and magic in it.",
+  "zh": "无论你能做或梦想做何事，开始吧。胆识蕴含天赋、力量与魔力。",
+  "author": "Johann Wolfgang von Goethe",
+  "work": "",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 121,
+  "text": "The person who does not read good books has no advantage over the person who cannot read them.",
+  "zh": "不读好书的人，并不比不识字的人占优势。",
+  "author": "Johann Wolfgang von Goethe",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 122,
+  "text": "Treat people as if they were what they ought to be and you help them become what they are capable of being.",
+  "zh": "以他人应有的样子对待他，便助他成为所能成为的人。",
+  "author": "Johann Wolfgang von Goethe",
+  "work": "",
+  "tags": [
+   "friendship"
+  ]
+ },
+ {
+  "id": 123,
+  "text": "As soon as you trust yourself, you will know how to live.",
+  "zh": "一旦你相信自己，便知如何生活。",
+  "author": "Johann Wolfgang von Goethe",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 124,
+  "text": "Things which matter most must never be at the mercy of things which matter least.",
+  "zh": "最重要的事，绝不可受制于最不重要的事。",
+  "author": "Johann Wolfgang von Goethe",
+  "work": "",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 125,
+  "text": "He who enjoys doing and enjoys what he has done is happy.",
+  "zh": "乐于做事并乐于所成之事者，是幸福的。",
+  "author": "Johann Wolfgang von Goethe",
+  "work": "",
+  "tags": [
+   "happiness"
+  ]
+ },
+ {
+  "id": 126,
+  "text": "None are more hopelessly enslaved than those who falsely believe they are free.",
+  "zh": "最无可救药被奴役的，是误以为自己自由的人。",
+  "author": "Johann Wolfgang von Goethe",
+  "work": "",
+  "tags": [
+   "freedom"
+  ]
+ },
+ {
+  "id": 127,
+  "text": "That which does not kill us makes us stronger.",
+  "zh": "凡杀不死我的，使我更强大。",
+  "author": "Friedrich Nietzsche",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 128,
+  "text": "He who has a why to live can bear almost any how.",
+  "zh": "知晓为何而活的人，几乎能承受任何如何。",
+  "author": "Friedrich Nietzsche",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 129,
+  "text": "Become who you are.",
+  "zh": "成为你自己。",
+  "author": "Friedrich Nietzsche",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 130,
+  "text": "When you gaze long into an abyss, the abyss also gazes into you.",
+  "zh": "当你长久凝视深渊，深渊也凝视着你。",
+  "author": "Friedrich Nietzsche",
+  "work": "",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 131,
+  "text": "The higher we soar, the smaller we appear to those who cannot fly.",
+  "zh": "我们飞得越高，在不能飞的人眼中就越小。",
+  "author": "Friedrich Nietzsche",
+  "work": "",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 132,
+  "text": "All truly great thoughts are conceived by walking.",
+  "zh": "一切真正伟大的思想，皆于行走中孕育。",
+  "author": "Friedrich Nietzsche",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 133,
+  "text": "Love your fate. It is your own.",
+  "zh": "热爱你的命运，那是你自己的。",
+  "author": "Friedrich Nietzsche",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 134,
+  "text": "The two most important days in your life are the day you are born and the day you find out why.",
+  "zh": "生命中最重要的两天，是你出生的那天，和你明白为何而生的那天。",
+  "author": "Mark Twain",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 135,
+  "text": "Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do.",
+  "zh": "二十年后，让你失望的将不是你做过的事，而是你没做的事。",
+  "author": "Mark Twain",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 136,
+  "text": "Kindness is the language which the deaf can hear and the blind can see.",
+  "zh": "善良是聋者能听、盲者能见的语言。",
+  "author": "Mark Twain",
+  "work": "",
+  "tags": [
+   "friendship"
+  ]
+ },
+ {
+  "id": 137,
+  "text": "Courage is resistance to fear, mastery of fear - not absence of fear.",
+  "zh": "勇气是抵抗恐惧、驾驭恐惧，而非没有恐惧。",
+  "author": "Mark Twain",
+  "work": "",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 138,
+  "text": "The secret of getting ahead is getting started.",
+  "zh": "领先的秘诀，在于开始。",
+  "author": "Mark Twain",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 139,
+  "text": "Worry is like a rocking chair: it gives you something to do but gets you nowhere.",
+  "zh": "忧虑如摇椅：让你有事做，却到不了任何地方。",
+  "author": "Mark Twain",
+  "work": "",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 140,
+  "text": "Keep away from people who try to belittle your ambitions.",
+  "zh": "远离那些试图贬低你志向的人。",
+  "author": "Mark Twain",
+  "work": "",
+  "tags": [
+   "friendship"
+  ]
+ },
+ {
+  "id": 141,
+  "text": "The best way to cheer yourself up is to try to cheer somebody else up.",
+  "zh": "让自己开心的最好方法，是设法让别人开心。",
+  "author": "Mark Twain",
+  "work": "",
+  "tags": [
+   "happiness"
+  ]
+ },
+ {
+  "id": 142,
+  "text": "Do the right thing. It will gratify some people and astonish the rest.",
+  "zh": "做正确的事。这会取悦一些人，让其余人惊讶。",
+  "author": "Mark Twain",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 143,
+  "text": "Be yourself; everyone else is already taken.",
+  "zh": "做你自己，因为别人都有人做了。",
+  "author": "Oscar Wilde",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 144,
+  "text": "To live is the rarest thing in the world. Most people exist, that is all.",
+  "zh": "生活是世上最稀罕的事，大多数人只是存在罢了。",
+  "author": "Oscar Wilde",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 145,
+  "text": "We are all in the gutter, but some of us are looking at the stars.",
+  "zh": "我们都在阴沟里，但有人仰望星空。",
+  "author": "Oscar Wilde",
+  "work": "",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 146,
+  "text": "The truth is rarely pure and never simple.",
+  "zh": "真相很少纯粹，也从不简单。",
+  "author": "Oscar Wilde",
+  "work": "",
+  "tags": [
+   "truth"
+  ]
+ },
+ {
+  "id": 147,
+  "text": "To love oneself is the beginning of a lifelong romance.",
+  "zh": "爱自己，是一生浪漫之始。",
+  "author": "Oscar Wilde",
+  "work": "",
+  "tags": [
+   "love"
+  ]
+ },
+ {
+  "id": 148,
+  "text": "A friend is one who knows you and loves you just the same.",
+  "zh": "朋友是了解你、却依然爱你的人。",
+  "author": "Oscar Wilde",
+  "work": "",
+  "tags": [
+   "friendship"
+  ]
+ },
+ {
+  "id": 149,
+  "text": "Experience is simply the name we give our mistakes.",
+  "zh": "经验不过是我们给错误起的名字。",
+  "author": "Oscar Wilde",
+  "work": "",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 150,
+  "text": "Life is too important to be taken seriously.",
+  "zh": "生命太重要，不该被认真对待。",
+  "author": "Oscar Wilde",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 151,
+  "text": "Even the darkest night will end and the sun will rise.",
+  "zh": "最黑暗的夜晚终会结束，太阳终将升起。",
+  "author": "Victor Hugo",
+  "work": "Les Misérables",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 152,
+  "text": "Nothing is more powerful than an idea whose time has come.",
+  "zh": "没有什么比一个时机已到的思想更有力量。",
+  "author": "Victor Hugo",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 153,
+  "text": "To love another person is to see the face of God.",
+  "zh": "爱另一个人，就是看见神的面孔。",
+  "author": "Victor Hugo",
+  "work": "Les Misérables",
+  "tags": [
+   "love"
+  ]
+ },
+ {
+  "id": 154,
+  "text": "He who opens a school door, closes a prison.",
+  "zh": "开一扇校门，便关一扇牢门。",
+  "author": "Victor Hugo",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 155,
+  "text": "The greatest happiness of life is the conviction that we are loved.",
+  "zh": "生命最大的幸福，是确信自己被爱着。",
+  "author": "Victor Hugo",
+  "work": "Les Misérables",
+  "tags": [
+   "love"
+  ]
+ },
+ {
+  "id": 156,
+  "text": "Adversity makes men, and prosperity makes monsters.",
+  "zh": "逆境造人，顺境造怪物。",
+  "author": "Victor Hugo",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 157,
+  "text": "There is nothing like a dream to create the future.",
+  "zh": "没有什么比梦想更能创造未来。",
+  "author": "Victor Hugo",
+  "work": "",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 158,
+  "text": "Laughter is the sun that drives winter from the human face.",
+  "zh": "笑声是驱散人脸上的冬天的太阳。",
+  "author": "Victor Hugo",
+  "work": "",
+  "tags": [
+   "happiness"
+  ]
+ },
+ {
+  "id": 159,
+  "text": "Everyone thinks of changing the world, but no one thinks of changing himself.",
+  "zh": "人人都想改变世界，却没人想改变自己。",
+  "author": "Leo Tolstoy",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 160,
+  "text": "The two most powerful warriors are patience and time.",
+  "zh": "最有力的两位战士，是耐心与时间。",
+  "author": "Leo Tolstoy",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 161,
+  "text": "If you want to be happy, be.",
+  "zh": "若想快乐，就去快乐。",
+  "author": "Leo Tolstoy",
+  "work": "",
+  "tags": [
+   "happiness"
+  ]
+ },
+ {
+  "id": 162,
+  "text": "We can know only that we know nothing. And that is the highest degree of human wisdom.",
+  "zh": "我们仅知自己一无所知，而这正是人类智慧的最高境界。",
+  "author": "Leo Tolstoy",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 163,
+  "text": "The sole meaning of life is to serve humanity.",
+  "zh": "生命的唯一意义，在于服务人类。",
+  "author": "Leo Tolstoy",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 164,
+  "text": "Wrong does not cease to be wrong because the majority share in it.",
+  "zh": "错误不因多数人的参与而变成正确。",
+  "author": "Leo Tolstoy",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 165,
+  "text": "The secret of man's being is not only to live but to have something to live for.",
+  "zh": "人存在的秘密，不仅在于活着，更在于有所为而生。",
+  "author": "Fyodor Dostoevsky",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 166,
+  "text": "To live without hope is to cease to live.",
+  "zh": "没有希望地活着，便是停止生活。",
+  "author": "Fyodor Dostoevsky",
+  "work": "",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 167,
+  "text": "Beauty will save the world.",
+  "zh": "美将拯救世界。",
+  "author": "Fyodor Dostoevsky",
+  "work": "",
+  "tags": [
+   "truth"
+  ]
+ },
+ {
+  "id": 168,
+  "text": "Taking a new step, uttering a new word, is what people fear most.",
+  "zh": "迈出一步、说出一个新词，是人们最恐惧的。",
+  "author": "Fyodor Dostoevsky",
+  "work": "",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 169,
+  "text": "We are all responsible for all.",
+  "zh": "我们为一切负责。",
+  "author": "Fyodor Dostoevsky",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 170,
+  "text": "The wound is the place where the light enters you.",
+  "zh": "伤口，是光照进你之处。",
+  "author": "Rumi",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 171,
+  "text": "What you seek is seeking you.",
+  "zh": "你所寻觅的，也在寻觅你。",
+  "author": "Rumi",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 172,
+  "text": "Raise your words, not your voice. It is rain that grows flowers, not thunder.",
+  "zh": "提高言语，而非嗓门。催开花朵的是雨，不是雷。",
+  "author": "Rumi",
+  "work": "",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 173,
+  "text": "Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.",
+  "zh": "昨日我聪慧，故想改变世界；今日我智慧，故改变自己。",
+  "author": "Rumi",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 174,
+  "text": "Don't grieve. Anything you lose comes round in another form.",
+  "zh": "不要悲伤，你失去的一切会以另一种形式归来。",
+  "author": "Rumi",
+  "work": "",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 175,
+  "text": "The only lasting beauty is the beauty of the heart.",
+  "zh": "唯一恒久的美，是心灵之美。",
+  "author": "Rumi",
+  "work": "",
+  "tags": [
+   "love"
+  ]
+ },
+ {
+  "id": 176,
+  "text": "The mind is its own place, and in itself can make a heaven of hell, a hell of heaven.",
+  "zh": "心是其自有之地，能化地狱为天堂，化天堂为地狱。",
+  "author": "John Milton",
+  "work": "Paradise Lost",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 177,
+  "text": "Better to reign in hell than serve in heaven.",
+  "zh": "宁在地狱为王，不在天堂为奴。",
+  "author": "John Milton",
+  "work": "Paradise Lost",
+  "tags": [
+   "freedom"
+  ]
+ },
+ {
+  "id": 178,
+  "text": "They also serve who only stand and wait.",
+  "zh": "那些伫立等候的人，也在服务。",
+  "author": "John Milton",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 179,
+  "text": "A good book is the precious lifeblood of a master spirit.",
+  "zh": "好书是大师精神的宝贵血脉。",
+  "author": "John Milton",
+  "work": "",
+  "tags": [
+   "learning"
+  ]
+ },
+ {
+  "id": 180,
+  "text": "To see a world in a grain of sand, and a heaven in a wild flower.",
+  "zh": "于一沙见世界，于一花见天堂。",
+  "author": "William Blake",
+  "work": "",
+  "tags": [
+   "nature"
+  ]
+ },
+ {
+  "id": 181,
+  "text": "Energy is eternal delight.",
+  "zh": "能量是永恒的喜悦。",
+  "author": "William Blake",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 182,
+  "text": "No bird soars too high if he soars with his own wings.",
+  "zh": "凭自己的翅膀高飞，没有鸟飞得太高。",
+  "author": "William Blake",
+  "work": "",
+  "tags": [
+   "freedom"
+  ]
+ },
+ {
+  "id": 183,
+  "text": "What is now proved was once only imagined.",
+  "zh": "今日已证之事，昔日为想象。",
+  "author": "William Blake",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 184,
+  "text": "If Winter comes, can Spring be far behind?",
+  "zh": "冬天来了，春天还会远吗？",
+  "author": "Percy Bysshe Shelley",
+  "work": "Ode to the West Wind",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 185,
+  "text": "Fear not for the future, weep not for the past.",
+  "zh": "不为将来惧，不为往昔泣。",
+  "author": "Percy Bysshe Shelley",
+  "work": "",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 186,
+  "text": "Love withers under constraint; its very essence is liberty.",
+  "zh": "爱在束缚下凋萎，其本质正是自由。",
+  "author": "Percy Bysshe Shelley",
+  "work": "",
+  "tags": [
+   "love"
+  ]
+ },
+ {
+  "id": 187,
+  "text": "Poetry is the record of the best and happiest moments of the best and happiest minds.",
+  "zh": "诗歌是最美心灵最幸福时刻的记录。",
+  "author": "Percy Bysshe Shelley",
+  "work": "",
+  "tags": [
+   "truth"
+  ]
+ },
+ {
+  "id": 188,
+  "text": "Keep your face always toward the sunshine - and shadows will fall behind you.",
+  "zh": "永远面朝阳光，阴影便会落在身后。",
+  "author": "Walt Whitman",
+  "work": "",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 189,
+  "text": "The powerful play goes on, and you may contribute a verse.",
+  "zh": "壮丽的戏剧继续上演，你也可献上一行诗。",
+  "author": "Walt Whitman",
+  "work": "Leaves of Grass",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 190,
+  "text": "I am large, I contain multitudes.",
+  "zh": "我胸怀广阔，我包罗万象。",
+  "author": "Walt Whitman",
+  "work": "Leaves of Grass",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 191,
+  "text": "Re-examine all you have been told. Dismiss that which insults your soul.",
+  "zh": "重审你听来的一切，抛弃那侮辱你灵魂之说。",
+  "author": "Walt Whitman",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 192,
+  "text": "Rest is not quitting the fight. Rest is the part of the fight you're not yet strong enough to see.",
+  "zh": "休息不是退出战斗，而是你尚未强大到能看清的战斗的一部分。",
+  "author": "Walt Whitman",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 193,
+  "text": "The earth is rude and incomprehensible at first; be not discouraged, keep on, there are divine things well enveloped.",
+  "zh": "大地起初粗粝难解，别气馁，继续前行，神圣之物正被妥善包裹。",
+  "author": "Walt Whitman",
+  "work": "Leaves of Grass",
+  "tags": [
+   "nature"
+  ]
+ },
+ {
+  "id": 194,
+  "text": "Hope is the thing with feathers that perches in the soul.",
+  "zh": "希望是栖于灵魂、生有羽毛之物。",
+  "author": "Emily Dickinson",
+  "work": "",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 195,
+  "text": "Forever is composed of nows.",
+  "zh": "永远由无数个现在组成。",
+  "author": "Emily Dickinson",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 196,
+  "text": "We never know how high we are till we are called to rise.",
+  "zh": "不到被召唤奋起之时，我们不知自己能有多高。",
+  "author": "Emily Dickinson",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 197,
+  "text": "Dwell in possibility.",
+  "zh": "栖居于可能之中。",
+  "author": "Emily Dickinson",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 198,
+  "text": "Success is counted sweetest by those who ne'er succeed.",
+  "zh": "成功之甘，未曾成功者尝得最浓。",
+  "author": "Emily Dickinson",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 199,
+  "text": "Not knowing when the dawn will come, I open every door.",
+  "zh": "不知黎明何时至，我敞开每一扇门。",
+  "author": "Emily Dickinson",
+  "work": "",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 200,
+  "text": "Don't judge each day by the harvest you reap but by the seeds you plant.",
+  "zh": "勿以收成评判每一天，而以你播下的种子。",
+  "author": "Robert Louis Stevenson",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 201,
+  "text": "Make the most of the best and the least of the worst.",
+  "zh": "善处最佳，淡看最劣。",
+  "author": "Robert Louis Stevenson",
+  "work": "",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 202,
+  "text": "Keep your fears to yourself, but share your courage.",
+  "zh": "恐惧留给自己，勇气与人分享。",
+  "author": "Robert Louis Stevenson",
+  "work": "",
+  "tags": [
+   "courage"
+  ]
+ },
+ {
+  "id": 203,
+  "text": "To travel hopefully is a better thing than to arrive.",
+  "zh": "怀抱希望地旅行，胜于抵达。",
+  "author": "Robert Louis Stevenson",
+  "work": "",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 204,
+  "text": "It is never too late to be what you might have been.",
+  "zh": "成为你本可成为的人，永不为迟。",
+  "author": "George Eliot",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 205,
+  "text": "What do we live for, if not to make life less difficult for each other?",
+  "zh": "若不能让彼此生活稍易，我们活着何为？",
+  "author": "George Eliot",
+  "work": "",
+  "tags": [
+   "friendship"
+  ]
+ },
+ {
+  "id": 206,
+  "text": "Blessed is the influence of one true, loving human soul on another.",
+  "zh": "一个真诚、有爱之魂对另一个的影响，是蒙福的。",
+  "author": "George Eliot",
+  "work": "",
+  "tags": [
+   "friendship"
+  ]
+ },
+ {
+  "id": 207,
+  "text": "Our sweetest songs are those that tell of saddest thought.",
+  "zh": "我们最甜美的歌，诉说的是最哀伤的思绪。",
+  "author": "George Eliot",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 208,
+  "text": "The man without a purpose is a ship without a rudder.",
+  "zh": "没有目标的人，是缺舵之船。",
+  "author": "Thomas Carlyle",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 209,
+  "text": "No pressure, no diamond.",
+  "zh": "无压力，无钻石。",
+  "author": "Thomas Carlyle",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 210,
+  "text": "He who has health has hope; and he who has hope has everything.",
+  "zh": "有健康者有希望；有希望者拥有一切。",
+  "author": "Thomas Carlyle",
+  "work": "",
+  "tags": [
+   "hope"
+  ]
+ },
+ {
+  "id": 211,
+  "text": "Silence is the element in which great things fashion themselves together.",
+  "zh": "沉默是伟大事物彼此成形的元素。",
+  "author": "Thomas Carlyle",
+  "work": "",
+  "tags": [
+   "wisdom"
+  ]
+ },
+ {
+  "id": 212,
+  "text": "The highest reward for a person's toil is not what they get for it, but what they become by it.",
+  "zh": "劳作最高回报不在所得，而在所成。",
+  "author": "John Ruskin",
+  "work": "",
+  "tags": [
+   "success"
+  ]
+ },
+ {
+  "id": 213,
+  "text": "Quality is never an accident. It is always the result of intelligent effort.",
+  "zh": "品质从非偶然，必是明智努力之果。",
+  "author": "John Ruskin",
+  "work": "",
+  "tags": [
+   "character"
+  ]
+ },
+ {
+  "id": 214,
+  "text": "When love and skill work together, expect a masterpiece.",
+  "zh": "当爱与技巧携手，杰作可期。",
+  "author": "John Ruskin",
+  "work": "",
+  "tags": [
+   "love"
+  ]
+ },
+ {
+  "id": 215,
+  "text": "The first wealth is health.",
+  "zh": "健康是第一笔财富。",
+  "author": "John Ruskin",
+  "work": "",
+  "tags": [
+   "life"
+  ]
+ },
+ {
+  "id": 216,
+  "text": "It is not so much our friends' help that helps us, as the confidence of their help.",
+  "zh": "与其说朋友的帮助助我们，不如说对他们会相助的信心助我们。",
+  "author": "Epicurus",
+  "work": "",
+  "tags": [
+   "friendship"
+  ]
+ },
+ {
+  "id": 217,
+  "text": "The greater the difficulty, the more the glory in surmounting it.",
+  "zh": "困难愈大，克服它的荣光愈盛。",
+  "author": "Epicurus",
+  "work": "",
+  "tags": [
+   "perseverance"
+  ]
+ },
+ {
+  "id": 218,
+  "text": "Do not spoil what you have by desiring what you have not.",
+  "zh": "别因觊觎未得之物，糟蹋了已有之物。",
+  "author": "Epicurus",
+  "work": "",
+  "tags": [
+   "happiness"
+  ]
+ },
+ {
+  "id": 219,
+  "text": "Freedom is the oxygen of the soul.",
+  "zh": "自由是灵魂之氧。",
+  "author": "Epicurus",
+  "work": "",
+  "tags": [
+   "freedom"
+  ]
+ }
+]
