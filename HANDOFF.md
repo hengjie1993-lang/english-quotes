@@ -9,7 +9,7 @@
 
 | 你要改的东西 | 必须同步动什么 | 不做的后果 |
 |---|---|---|
-| 改 `index.html` 的任何功能/样式 | 升 `index.html` 里的 `APP_VERSION` + `sw.js` 的 `CACHE` / `APP_VERSION` | 手机端看不到任何改动（SW 缓存陷阱，详见 §4） |
+| 改 `index.html` 的任何功能/样式 | 升 `index.html` 与 `sw.js` 里的 `APP_VERSION` | 手机端看不到任何改动（SW 缓存陷阱，详见 §4） |
 | 改/增 `quotes.json` 数据 | 升 `APP_VERSION`（让客户端强制重拉 `quotes.json?v=N`） | 用户手机仍读旧数据 |
 | 加/改主题标签 | 同步更新 `index.html` 里 `tagLabel()` 的中文映射表 | 新标签显示为英文原文 |
 
@@ -34,7 +34,7 @@
 | `index.html` | Vue3 单文件主应用（UI + 逻辑 + 样式） | 高 |
 | `quotes.json` | 名句数据（219 条 / ~52KB），字段见 §5 | 中（加句子时） |
 | `build_quotes.py` | 策划数据的脚本，运行生成 `quotes.json` | 低（加句子时改它再跑） |
-| `sw.js` | Service Worker，缓存策略 | 低（仅版本号随动） |
+| `sw.js` | Service Worker，**v5 起改为「透明穿透」，不再缓存任何资源** | 低（仅版本号随动） |
 | `manifest.webmanifest` | PWA 加到主屏 | 低 |
 | `LICENSE` | MIT | 不 |
 | `HANDOFF.md` | 本文件 | 中（每次大改同步） |
@@ -63,11 +63,17 @@ quotes.json ──fetch──▶ this.all ──filter(query+tag)──▶ view 
 ### 3.4 隐藏翻译
 `showZh` 布尔，`v-if="showZh"` 控制中文块渲染（用 `v-if` 销毁节点，不留白——**不要改用 `visibility:hidden`**，见 §6）。
 
-### 3.5 Service Worker / 缓存策略
-- 注册：**微信内不注册**（UA 判定），否则 `load` 后注册 `sw.js`；发现新版 SW 立即 `skipWaiting` + 刷新，不让旧 SW 长期等待。
-- `sw.js`：`index.html` 与 `quotes.json`（及带 `?v=` 的请求）走 **network-first**；其余资源 **cache-first**。
-- `index.html` 加了 `Cache-Control: no-cache` meta，进一步减少浏览器/微信的 HTTP 缓存干扰。
-- 微信内不注册 SW，避免小诗囊 v4–v7 踩过的「旧 SW 缓存旧版、手机困在旧数据」陷阱。
+### 3.5 Service Worker / 缓存策略（v5 重大调整）
+> 历史教训：v1→v4 的 SW 用 cache-first / network-first 缓存 `index.html`，多次导致**手机端困在旧版**（如 v4 加了作者中文名，桌面正常、手机作者名消失）。v5 起改为**透明穿透**：
+
+- **注册**：微信内不注册（UA 判定），否则 `load` 后注册 `sw.js`。
+- **`sw.js` v5 行为**：
+  - `fetch` 事件 **完全穿透**（`event.respondWith(fetch(event.request))`），**不缓存任何资源**，内容永远走网络、永远最新。
+  - `install` 即 `skipWaiting()`；`activate` 清空全部旧缓存 → `clients.claim()` → **强制 `navigator` 刷新每一个已打开页面**。
+  - 正是靠「激活即强刷所有页面」，手机端滞留的旧 HTML 会被一次性甩掉（无需用户手动清缓存）。
+- `index.html` 仍保留 `Cache-Control: no-cache` meta，减少浏览器/微信的 HTTP 层缓存干扰。
+- 微信内不注册 SW（腾讯对 SW 支持差），但微信里 `index.html` 本身靠 no-cache meta + `quotes.json?v=N` 强制重拉，也不会困旧版。
+- 代价：牺牲离线可用（无缓存），但换来了「永远最新、不再有缓存陷阱」，对亲子随手用的小工具更稳妥。
 
 ---
 
@@ -156,8 +162,8 @@ curl -s "https://<账号>.github.io/english-quotes/quotes.json?v=1" | python -c 
 
 ## 9. 当前状态
 
-- 版本 **v4**（`APP_VERSION = '4'`，`CACHE = 'english-v4'`）。
+- 版本 **v5**（`APP_VERSION = '5'`，`sw.js` 已无 `CACHE` 变量，改为透明穿透）。
 - 数据 **219 条**，33 位公版名家。
 - 功能：随机起手、搜索（英/中/作者含中文名）、主题标签筛选、隐藏翻译。
-- v2 移除 TTS 朗读；v3 优化缓存策略；v4 新增**作者中文名**（`authorZh` 字段，由 `build_quotes.py` 的 `AUTHOR_ZH` 映射生成）并整体重做视觉（大引号装饰、中英作者分层、更清爽配色）。
+- v2 移除 TTS 朗读；v3 优化缓存策略；v4 新增**作者中文名**（`authorZh` 字段）+ 重做视觉；**v5 把 SW 改成透明穿透并激活即强刷所有页面，根治「手机端作者名不显示 / 升级后仍显示旧版」的缓存陷阱**。
 - 仓库公开 + MIT 许可 + 仅你有写权限。

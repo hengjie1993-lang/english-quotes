@@ -152,7 +152,7 @@
 
   <script>
     const { createApp } = Vue;
-    const APP_VERSION = '4';
+    const APP_VERSION = '5';
 
     // 版本校验：若线上版本更新，强制刷新以甩开旧缓存（微信/浏览器缓存陷阱）
     (function(){
@@ -241,19 +241,11 @@
 
   <script>
     // ===== Service Worker 注册（微信内禁用，避免缓存陷阱）=====
+    // 非微信浏览器注册「透明穿透版」sw.js（v5 起不再缓存任何资源），
+    // 由 sw.js 在激活时强制刷新所有已打开页面，从根上解决「升级后仍显示旧版」。
     if('serviceWorker' in navigator && !/MicroMessenger/i.test(navigator.userAgent)){
       window.addEventListener('load', ()=>{
-        navigator.serviceWorker.register('sw.js').then(reg=>{
-          // 发现新版本立即接管并刷新，避免旧缓存长期停留
-          reg.addEventListener('updatefound', ()=>{
-            const sw = reg.installing;
-            sw.addEventListener('statechange', ()=>{
-              if(sw.state === 'activated') location.reload();
-            });
-            sw.postMessage({type:'skipWaiting'});
-          });
-          if(reg.waiting) reg.waiting.postMessage({type:'skipWaiting'});
-        }).catch(()=>{});
+        navigator.serviceWorker.register('sw.js').catch(()=>{});
       });
     }
   </script>

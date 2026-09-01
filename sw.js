@@ -1,23 +1,31 @@
-const CACHE = 'english-v4';
-const APP_VERSION = '4';
-const ASSETS = [
-  './',
-  './index.html',
-  './quotes.json?v=' + APP_VERSION,
-  './manifest.webmanifest',
-];
+// v5：透明网络穿透版 Service Worker。
+// 设计目标：彻底消除「升级后仍显示旧版 / 作者名不出现」这类缓存陷阱。
+//  - 不再缓存 index.html / quotes.json 等任何资源（全部走网络），保证内容永远最新。
+//  - 激活后立即 claim 所有页面，并强制刷新每一个已打开的页面，
+//    把手机端可能滞留的旧 HTML 一次性甩掉。
+//  - 仍保留 SW 以支持「添加到主屏幕」，但不再承担缓存职责。
+
+const APP_VERSION = '5';
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE).then((c) => c.addAll(ASSETS).catch(() => {})).then(() => self.skipWaiting())
-  );
+  // 安装即跳过等待，尽快接管
+  self.skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)))
-    ).then(() => self.clients.claim())
+    (async () => {
+      // 1) 清空一切历史缓存（v1~v4 留下的旧内容）
+      const keys = await caches.keys();
+      await Promise.all(keys.map((k) => caches.delete(k)));
+      // 2) 立即接管所有页面（含未被 SW 控制的）
+      await self.clients.claim();
+      // 3) 强制刷新所有已打开的页面，甩开旧 HTML
+      const clients = await self.clients.matchAll({ includeUncontrolled: true });
+      clients.forEach((c) => {
+        try { c.navigate(c.url); } catch (e) { /* 忽略个别客户端导航失败 */ }
+      });
+    })()
   );
 });
 
@@ -26,28 +34,6 @@ self.addEventListener('message', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  const req = event.request;
-  if (req.method !== 'GET') return;
-  const url = new URL(req.url);
-  if (url.origin !== self.location.origin) return;
-
-  // index.html 与数据文件：network-first，确保新版及时生效；失败才回退缓存
-  const isHTML = url.pathname === '/' || url.pathname.endsWith('index.html');
-  if (isHTML || url.pathname.endsWith('quotes.json') || url.search.includes('v=')) {
-    event.respondWith(
-      fetch(req)
-        .then((r) => { const cp = r.clone(); caches.open(CACHE).then((c) => c.put(req, cp)); return r; })
-        .catch(() => caches.match(req))
-    );
-    return;
-  }
-
-  // 其余静态资源：cache-first
-  event.respondWith(
-    caches.match(req).then((cached) =>
-      cached ||
-      fetch(req).then((r) => { const cp = r.clone(); caches.open(CACHE).then((c) => c.put(req, cp)); return r; })
-        .catch(() => caches.match('./index.html'))
-    )
-  );
+  // 完全穿透：直接请求网络，不做任何缓存。
+  event.respondWith(fetch(event.request));
 });
