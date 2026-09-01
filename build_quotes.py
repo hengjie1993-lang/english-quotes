@@ -6,17 +6,55 @@ build_quotes.py — 生成 quotes.json
 翻译用自译或公版译本，版权干净。
 
 字段：
-  text   英文原句
-  zh     中文翻译
-  author 作者（公版名家）
-  work   出处（作品名，留空表示无明确出处/传统归名）
-  tags   主题标签，逗号分隔
+  text      英文原句
+  zh        中文翻译
+  author    作者（公版名家，英文）
+  authorZh  作者中文名（显示用）
+  work      出处（作品名，留空表示无明确出处/传统归名）
+  tags      主题标签，逗号分隔
 
 运行：python build_quotes.py  -> 生成 quotes.json
 """
 import json, os
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+
+# 作者中文名映射（按英文名查表）
+AUTHOR_ZH = {
+    "William Shakespeare": "莎士比亚",
+    "Francis Bacon": "培根",
+    "Socrates": "苏格拉底",
+    "Plato": "柏拉图",
+    "Aristotle": "亚里士多德",
+    "Confucius": "孔子",
+    "Lao Tzu": "老子",
+    "Sun Tzu": "孙子",
+    "Marcus Aurelius": "马可·奥勒留",
+    "Seneca": "塞涅卡",
+    "Cicero": "西塞罗",
+    "Ralph Waldo Emerson": "爱默生",
+    "Henry David Thoreau": "亨利·戴维·梭罗",
+    "Benjamin Franklin": "富兰克林",
+    "Abraham Lincoln": "亚伯拉罕·林肯",
+    "Johann Wolfgang von Goethe": "歌德",
+    "Friedrich Nietzsche": "尼采",
+    "Mark Twain": "马克·吐温",
+    "Oscar Wilde": "王尔德",
+    "Victor Hugo": "维克多·雨果",
+    "Leo Tolstoy": "列夫·托尔斯泰",
+    "Fyodor Dostoevsky": "陀思妥耶夫斯基",
+    "Rumi": "鲁米",
+    "John Milton": "约翰·弥尔顿",
+    "William Blake": "威廉·布莱克",
+    "Percy Bysshe Shelley": "雪莱",
+    "Walt Whitman": "沃尔特·惠特曼",
+    "Emily Dickinson": "艾米莉·狄金森",
+    "Robert Louis Stevenson": "史蒂文森",
+    "George Eliot": "乔治·艾略特",
+    "Thomas Carlyle": "托马斯·卡莱尔",
+    "John Ruskin": "约翰·罗斯金",
+    "Epicurus": "伊壁鸠鲁",
+}
 
 # [text, zh, author, work, tags]
 DATA = [
@@ -313,11 +351,13 @@ def main():
         if key in seen:
             continue
         seen.add(key)
+        a = author.strip()
         out.append({
             "id": len(out) + 1,
             "text": text.strip(),
             "zh": zh.strip(),
-            "author": author.strip(),
+            "author": a,
+            "authorZh": AUTHOR_ZH.get(a, a),
             "work": work.strip(),
             "tags": [t.strip() for t in tags.split(",") if t.strip()],
         })

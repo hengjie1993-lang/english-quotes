@@ -101,7 +101,9 @@ quotes.json ──fetch──▶ this.all ──filter(query+tag)──▶ view 
 - `id`：顺序编号（由 `build_quotes.py` 自动赋，不必手填）。
 - `text`：英文原句。
 - `zh`：中文翻译。
-- `author` / `work`：作者 / 出处（无出处留空字符串）。
+- `author`：作者英文名。
+- `authorZh`：作者中文名（显示用，由 `build_quotes.py` 的 `AUTHOR_ZH` 映射自动生成，加新作者须在此字典补中文名）。
+- `work`：出处（无出处留空字符串）。
 - `tags`：主题标签数组，取值见 `tagLabel` 映射（wisdom/courage/friendship/love/perseverance/time/learning/happiness/character/success/life/freedom/nature/truth/hope）。
 
 ### 版权约束（硬规矩）
@@ -154,8 +156,8 @@ curl -s "https://<账号>.github.io/english-quotes/quotes.json?v=1" | python -c 
 
 ## 9. 当前状态
 
-- 版本 **v3**（`APP_VERSION = '3'`，`CACHE = 'english-v3'`）。
+- 版本 **v4**（`APP_VERSION = '4'`，`CACHE = 'english-v4'`）。
 - 数据 **219 条**，33 位公版名家。
-- 功能：随机起手、搜索（英/中/作者）、主题标签筛选、隐藏翻译。
-- v2 已移除 TTS 朗读（浏览器语音合成太机械）；v3 优化缓存策略，防止升级后仍显示旧版。
+- 功能：随机起手、搜索（英/中/作者含中文名）、主题标签筛选、隐藏翻译。
+- v2 移除 TTS 朗读；v3 优化缓存策略；v4 新增**作者中文名**（`authorZh` 字段，由 `build_quotes.py` 的 `AUTHOR_ZH` 映射生成）并整体重做视觉（大引号装饰、中英作者分层、更清爽配色）。
 - 仓库公开 + MIT 许可 + 仅你有写权限。

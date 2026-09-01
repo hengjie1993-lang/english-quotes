@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
-  <meta name="theme-color" content="#1f3a5f" />
+  <meta name="theme-color" content="#2c3e50" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
@@ -12,81 +12,94 @@
   <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
   <style>
     :root{
-      --bg1:#eef3fb; --bg2:#dde7f5;
-      --ink:#1f2d3d; --muted:#6b7a90;
-      --card:#ffffff; --line:#e4e9f2;
-      --accent:#1f3a5f; --accent2:#3b6ea5;
-      --hi:#fff3bf; --hi-ink:#8a6d00;
-      --fs-q: clamp(20px, 5.4vw, 30px);
-      --fs-zh: clamp(15px, 4vw, 20px);
-      --fs-meta: clamp(13px, 3.4vw, 16px);
+      --bg1:#f4f6f9; --bg2:#e7ecf3;
+      --ink:#2b3a4a; --ink-soft:#56708a;
+      --muted:#8a9bb0;
+      --card:#ffffff; --line:#e8edf3;
+      --accent:#2c4a6e; --accent2:#4a7bb0;
+      --quote:#d9e2ec;
+      --fs-brand: clamp(26px, 7.5vw, 38px);
+      --fs-q: clamp(20px, 5.2vw, 29px);
+      --fs-zh: clamp(15px, 3.9vw, 20px);
+      --fs-meta: clamp(13px, 3.3vw, 15px);
+      --fs-sub: clamp(12px, 3.1vw, 14px);
     }
     *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
-    html,body{margin:0; padding:0; height:100%;}
+    html,body{margin:0; padding:0; min-height:100%;}
     body{
       font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC","Helvetica Neue",Arial,sans-serif;
       color:var(--ink);
-      background:linear-gradient(160deg,var(--bg1),var(--bg2));
+      background:linear-gradient(165deg,var(--bg1),var(--bg2));
       min-height:100dvh;
       padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     }
-    #app{max-width:680px; margin:0 auto; padding:clamp(14px,4vw,22px); display:flex; flex-direction:column; min-height:100dvh;}
+    #app{max-width:660px; margin:0 auto; padding:clamp(18px,4.5vw,28px) clamp(16px,4vw,22px); display:flex; flex-direction:column; min-height:100dvh;}
 
-    .topbar{text-align:center; margin-bottom:clamp(12px,3vw,18px);}
-    .brand{font-size:clamp(24px,7vw,34px); font-weight:700; letter-spacing:4px; color:var(--accent);}
+    .topbar{text-align:center; margin-bottom:clamp(18px,4vw,26px);}
+    .brand{font-size:var(--fs-brand); font-weight:700; letter-spacing:6px; color:var(--accent);}
     .brand .accent{color:#c0392b;}
-    .sub{font-size:var(--fs-meta); color:var(--muted); margin-top:4px; letter-spacing:1px;}
+    .sub{font-size:var(--fs-sub); color:var(--muted); margin-top:6px; letter-spacing:2px;}
 
-    .controls{margin-bottom:clamp(12px,3vw,18px);}
+    .controls{margin-bottom:clamp(16px,4vw,22px);}
     .search input{
-      width:100%; padding:clamp(10px,2.6vw,13px) clamp(12px,3vw,16px);
-      border:1px solid var(--line); border-radius:14px; background:var(--card);
-      font-size:var(--fs-meta); color:var(--ink); outline:none;
+      width:100%; padding:clamp(11px,2.8vw,14px) clamp(14px,3.2vw,18px);
+      border:1px solid var(--line); border-radius:16px; background:var(--card);
+      font-size:var(--fs-meta); color:var(--ink); outline:none; transition:border-color .15s, box-shadow .15s;
     }
-    .search input:focus{border-color:var(--accent2);}
-    .tags{display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; justify-content:center;}
+    .search input:focus{border-color:var(--accent2); box-shadow:0 0 0 3px rgba(74,123,176,.12);}
+    .tags{display:flex; flex-wrap:wrap; gap:7px; margin-top:12px; justify-content:center;}
     .tags button{
       border:1px solid var(--line); background:var(--card); color:var(--muted);
-      padding:5px 11px; border-radius:999px; font-size:clamp(11px,3vw,13px); cursor:pointer;
+      padding:6px 13px; border-radius:999px; font-size:clamp(11px,3vw,13px); cursor:pointer; transition:all .15s;
     }
     .tags button.on{background:var(--accent); color:#fff; border-color:var(--accent);}
 
     .stage{flex:1; display:flex; flex-direction:column; justify-content:center;}
     .card{
-      background:var(--card); border:1px solid var(--line); border-radius:20px;
-      padding:clamp(20px,5vw,32px); box-shadow:0 10px 30px rgba(31,58,95,.08);
-      text-align:center;
+      position:relative; background:var(--card); border:1px solid var(--line); border-radius:26px;
+      padding:clamp(26px,6vw,40px) clamp(22px,5.5vw,36px); box-shadow:0 14px 40px rgba(44,74,110,.08);
+      overflow:hidden;
+    }
+    .card .mark{
+      position:absolute; top:-12px; left:14px; font-family:Georgia,serif; font-size:96px; line-height:1;
+      color:var(--quote); pointer-events:none; user-select:none; font-weight:700;
     }
     .quote{
-      font-family:Georgia,"Times New Roman",serif;
-      font-size:var(--fs-q); line-height:1.55; color:var(--ink); font-weight:500;
-      text-align:left;
+      position:relative; font-family:Georgia,"Times New Roman",serif;
+      font-size:var(--fs-q); line-height:1.65; color:var(--ink); font-weight:500;
+      text-align:left; margin-top:18px;
     }
     .zh{
-      margin-top:clamp(14px,3.5vw,20px); text-align:left;
-      font-size:var(--fs-zh); color:var(--muted); line-height:1.6;
+      position:relative; margin-top:clamp(16px,4vw,22px); text-align:left;
+      font-size:var(--fs-zh); color:var(--ink-soft); line-height:1.7;
     }
-    .meta{margin-top:clamp(16px,4vw,22px); font-size:var(--fs-meta); color:var(--accent);}
-    .meta .author{font-style:italic; font-weight:600;}
-    .meta .work{color:var(--muted); margin-left:8px; font-style:normal;}
-    .actions{display:flex; gap:10px; justify-content:center; margin-top:clamp(16px,4vw,22px); flex-wrap:wrap;}
-    .actions button{
-      border:none; border-radius:12px; padding:10px 18px; font-size:var(--fs-meta); cursor:pointer;
-      background:var(--accent); color:#fff; font-weight:600;
+    .meta{
+      position:relative; margin-top:clamp(22px,5vw,30px); padding-top:clamp(14px,3.5vw,18px);
+      border-top:1px solid var(--line); display:flex; flex-direction:column; gap:4px;
     }
-    .actions button.toggle{background:#eef1f6; color:var(--accent);}
-    .actions button:disabled{opacity:.45; cursor:not-allowed;}
+    .meta .author-zh{font-size:clamp(15px,3.6vw,18px); font-weight:700; color:var(--accent); letter-spacing:.5px;}
+    .meta .author-en{font-size:var(--fs-sub); color:var(--muted); font-style:italic;}
+    .meta .work{font-style:normal; color:var(--accent2); margin-left:6px;}
 
-    .nav{display:flex; align-items:center; justify-content:center; gap:10px; margin-top:clamp(14px,3.5vw,20px); flex-wrap:wrap;}
+    .actions{display:flex; gap:10px; justify-content:center; margin-top:clamp(20px,4.5vw,26px); flex-wrap:wrap;}
+    .actions button{
+      border:none; border-radius:14px; padding:11px 22px; font-size:var(--fs-meta); cursor:pointer;
+      background:var(--accent); color:#fff; font-weight:600; transition:transform .1s, opacity .15s;
+    }
+    .actions button:active{transform:scale(.97);}
+    .actions button.toggle{background:#eef2f7; color:var(--accent);}
+
+    .nav{display:flex; align-items:center; justify-content:center; gap:10px; margin-top:clamp(16px,4vw,22px); flex-wrap:wrap;}
     .nav button{
       border:1px solid var(--line); background:var(--card); color:var(--accent);
-      padding:8px 14px; border-radius:12px; font-size:var(--fs-meta); cursor:pointer;
+      padding:9px 16px; border-radius:13px; font-size:var(--fs-meta); cursor:pointer; transition:background .15s, transform .1s;
     }
+    .nav button:active{transform:scale(.97);}
     .nav .shuffle{background:var(--accent2); color:#fff; border-color:var(--accent2);}
-    .nav .count{font-size:var(--fs-meta); color:var(--muted); min-width:64px; text-align:center;}
+    .nav .count{font-size:var(--fs-meta); color:var(--muted); min-width:68px; text-align:center;}
 
-    .foot{text-align:center; font-size:clamp(11px,3vw,13px); color:var(--muted); margin-top:clamp(14px,3.5vw,20px);}
-    .err{background:#fff3f3; color:#c0392b; border:1px solid #f3c9c9; border-radius:12px; padding:14px; text-align:center; font-size:var(--fs-meta);}
+    .foot{text-align:center; font-size:clamp(11px,3vw,13px); color:var(--muted); margin-top:clamp(16px,4vw,22px);}
+    .err{background:#fff3f3; color:#c0392b; border:1px solid #f3c9c9; border-radius:14px; padding:16px; text-align:center; font-size:var(--fs-meta);}
   </style>
 </head>
 <body>
@@ -111,11 +124,12 @@
       <div v-else-if="error" class="err">{{ error }}</div>
       <template v-else-if="current">
         <div class="card">
+          <div class="mark">“</div>
           <div class="quote">{{ current.text }}</div>
           <div class="zh" v-if="showZh">{{ current.zh }}</div>
           <div class="meta">
-            <span class="author">— {{ current.author }}</span>
-            <span class="work" v-if="current.work">《{{ current.work }}》</span>
+            <div class="author-zh">{{ current.authorZh }}</div>
+            <div class="author-en">{{ current.author }}<span v-if="current.work" class="work">《{{ current.work }}》</span></div>
           </div>
           <div class="actions">
             <button class="toggle" @click="showZh=!showZh">{{ showZh ? '隐藏翻译' : '显示翻译' }}</button>
@@ -138,7 +152,7 @@
 
   <script>
     const { createApp } = Vue;
-    const APP_VERSION = '3';
+    const APP_VERSION = '4';
 
     // 版本校验：若线上版本更新，强制刷新以甩开旧缓存（微信/浏览器缓存陷阱）
     (function(){
@@ -180,7 +194,7 @@
           return this.all.filter(p=>{
             if(this.activeTag && !p.tags.includes(this.activeTag)) return false;
             if(!q) return true;
-            return (p.text+' '+p.zh+' '+p.author+' '+p.work).toLowerCase().includes(q);
+            return (p.text+' '+p.zh+' '+p.author+' '+p.authorZh+' '+p.work).toLowerCase().includes(q);
           });
         },
         current(){ return this.view[this.idx] || null; },
