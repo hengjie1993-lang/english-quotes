@@ -22,7 +22,6 @@
 - **技术栈**：单文件 `index.html`（Vue 3 global build + 自写 CSS，CDN 走 jsdelivr）+ `quotes.json` + PWA（`manifest.webmanifest` + `sw.js`）。
 - **与小诗囊的核心差异**：
   - 没有「拼音」→ 改为 **中文翻译**（中英对照，可一键隐藏）。
-  - 加 **中文翻译**（中英对照，可一键隐藏，对应小诗囊的「隐藏拼音」）。
   - 加 **主题标签筛选**（智慧/勇气/友谊…），小诗囊没有。
   - 版权范围受约束：只收录**作者去世超百年的公版名家**（见 §5）。
 
@@ -65,8 +64,9 @@ quotes.json ──fetch──▶ this.all ──filter(query+tag)──▶ view 
 `showZh` 布尔，`v-if="showZh"` 控制中文块渲染（用 `v-if` 销毁节点，不留白——**不要改用 `visibility:hidden`**，见 §6）。
 
 ### 3.5 Service Worker / 缓存策略
-- 注册：**微信内不注册**（UA 判定），否则 `load` 后 `navigator.serviceWorker.register('sw.js')`。
-- `sw.js`：`quotes.json`（及带 `?v=` 的请求）走 **network-first**；其余资源 **cache-first**。
+- 注册：**微信内不注册**（UA 判定），否则 `load` 后注册 `sw.js`；发现新版 SW 立即 `skipWaiting` + 刷新，不让旧 SW 长期等待。
+- `sw.js`：`index.html` 与 `quotes.json`（及带 `?v=` 的请求）走 **network-first**；其余资源 **cache-first**。
+- `index.html` 加了 `Cache-Control: no-cache` meta，进一步减少浏览器/微信的 HTTP 缓存干扰。
 - 微信内不注册 SW，避免小诗囊 v4–v7 踩过的「旧 SW 缓存旧版、手机困在旧数据」陷阱。
 
 ---
@@ -125,6 +125,7 @@ python3 build_quotes.py      # 重新生成 quotes.json
 | 隐藏翻译用 `v-if` | 销毁节点而非 `visibility:hidden`，否则留白（小诗囊 v9 的坑）。 |
 | 加 tag 要同步 `tagLabel` | 否则新标签显示英文。 |
 | 搜索词大小写 | 已 `toLowerCase()` 归一，无需担心。 |
+| 升级后仍看到旧版 | 浏览器/PWA/微信可能缓存旧 `index.html`。v3 起 `index.html` 走 network-first 并加 no-cache meta；如仍看到旧版，手动下拉刷新或清除浏览器缓存。 |
 
 ---
 
@@ -153,8 +154,8 @@ curl -s "https://<账号>.github.io/english-quotes/quotes.json?v=1" | python -c 
 
 ## 9. 当前状态
 
-- 版本 **v2**（`APP_VERSION = '2'`，`CACHE = 'english-v2'`）。
+- 版本 **v3**（`APP_VERSION = '3'`，`CACHE = 'english-v3'`）。
 - 数据 **219 条**，33 位公版名家。
 - 功能：随机起手、搜索（英/中/作者）、主题标签筛选、隐藏翻译。
-- v2 已移除 TTS 朗读（浏览器语音合成太机械）。
+- v2 已移除 TTS 朗读（浏览器语音合成太机械）；v3 优化缓存策略，防止升级后仍显示旧版。
 - 仓库公开 + MIT 许可 + 仅你有写权限。

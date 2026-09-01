@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no" />
   <meta name="theme-color" content="#1f3a5f" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>英句囊 · 经典英文名句</title>
   <link rel="manifest" href="manifest.webmanifest" />
   <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
@@ -135,7 +138,20 @@
 
   <script>
     const { createApp } = Vue;
-    const APP_VERSION = '2';
+    const APP_VERSION = '3';
+
+    // 版本校验：若线上版本更新，强制刷新以甩开旧缓存（微信/浏览器缓存陷阱）
+    (function(){
+      try{
+        const v = localStorage.getItem('english-quotes-version');
+        if(v && v !== APP_VERSION){
+          localStorage.setItem('english-quotes-version', APP_VERSION);
+          location.reload();
+          return;
+        }
+        localStorage.setItem('english-quotes-version', APP_VERSION);
+      }catch(e){}
+    })();
 
     // 密码学安全随机，优先 crypto，回退 Math.random
     function randInt(n){
@@ -213,7 +229,17 @@
     // ===== Service Worker 注册（微信内禁用，避免缓存陷阱）=====
     if('serviceWorker' in navigator && !/MicroMessenger/i.test(navigator.userAgent)){
       window.addEventListener('load', ()=>{
-        navigator.serviceWorker.register('sw.js').catch(()=>{});
+        navigator.serviceWorker.register('sw.js').then(reg=>{
+          // 发现新版本立即接管并刷新，避免旧缓存长期停留
+          reg.addEventListener('updatefound', ()=>{
+            const sw = reg.installing;
+            sw.addEventListener('statechange', ()=>{
+              if(sw.state === 'activated') location.reload();
+            });
+            sw.postMessage({type:'skipWaiting'});
+          });
+          if(reg.waiting) reg.waiting.postMessage({type:'skipWaiting'});
+        }).catch(()=>{});
       });
     }
   </script>
