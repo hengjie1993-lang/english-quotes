@@ -167,6 +167,7 @@ curl -s "https://<账号>.github.io/english-quotes/quotes.json?v=1" | python -c 
 - 功能：随机起手、搜索（英/中/作者含中文名）、主题标签筛选、隐藏翻译。
 - v2 移除 TTS 朗读；v3 优化缓存策略；v4 新增**作者中文名**（`authorZh` 字段）+ 重做视觉；**v5 把 SW 改成透明穿透并激活即强刷所有页面，根治「手机端作者名不显示 / 升级后仍显示旧版」的缓存陷阱**；**v6 将中文名「英句囊」正式更名为英文品牌 Maxim（英语里"箴言/格言"的标准原生词），同步更新 `<title>`、页头品牌字与 `manifest.webmanifest` 的 name/short_name**。
 - 仓库公开 + MIT 许可 + 仅你有写权限。
+- ⚠️ **名字状态**：`Maxim` 是 AI 在用户两次跳过选项后**擅自定下并发布**的，用户从未明确确认认可。若用户日后想换名（Adage / Pearls / Quill 等），改 `index.html` 的 `<title>`、品牌字、`manifest.webmanifest` 的 name/short_name + 升 `APP_VERSION` 即可，纯文案零风险。
 
 ---
 
