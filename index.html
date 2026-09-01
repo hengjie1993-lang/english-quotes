@@ -59,8 +59,6 @@
       font-size:var(--fs-q); line-height:1.55; color:var(--ink); font-weight:500;
       text-align:left;
     }
-    .tk{margin-right:0.28em; border-radius:6px; padding:0 1px; transition:background .12s,color .12s;}
-    .tk.active{background:var(--hi); color:var(--hi-ink); box-shadow:0 0 0 2px var(--hi);}
     .zh{
       margin-top:clamp(14px,3.5vw,20px); text-align:left;
       font-size:var(--fs-zh); color:var(--muted); line-height:1.6;
@@ -110,17 +108,13 @@
       <div v-else-if="error" class="err">{{ error }}</div>
       <template v-else-if="current">
         <div class="card">
-          <div class="quote">
-            <span v-if="tokens.length" v-for="(tk,i) in tokens" :key="i" :class="['tk',{active: i===activeToken}]">{{ tk.word }}</span>
-            <span v-else>{{ current.text }}</span>
-          </div>
+          <div class="quote">{{ current.text }}</div>
           <div class="zh" v-if="showZh">{{ current.zh }}</div>
           <div class="meta">
             <span class="author">— {{ current.author }}</span>
             <span class="work" v-if="current.work">《{{ current.work }}》</span>
           </div>
           <div class="actions">
-            <button class="tts" @click="toggleSpeak" :disabled="ttsUnsupported">{{ speaking ? '⏸ 停止' : '🔊 朗读' }}</button>
             <button class="toggle" @click="showZh=!showZh">{{ showZh ? '隐藏翻译' : '显示翻译' }}</button>
           </div>
         </div>
@@ -141,7 +135,7 @@
 
   <script>
     const { createApp } = Vue;
-    const APP_VERSION = '1';
+    const APP_VERSION = '2';
 
     // 密码学安全随机，优先 crypto，回退 Math.random
     function randInt(n){
@@ -156,24 +150,12 @@
       return Math.floor(Math.random()*n);
     }
 
-    function tokenize(text){
-      const re = /[\w']+/g;
-      const toks = [];
-      let m;
-      while((m = re.exec(text))){
-        toks.push({ word:m[0], start:m.index, end:m.index + m[0].length });
-      }
-      return toks;
-    }
-
     createApp({
       data(){
         return {
           all:[], loaded:false, error:'',
           query:'', activeTag:null, idx:0,
           showZh:true,
-          speaking:false, activeToken:-1,
-          ttsUnsupported:false,
         };
       },
       computed:{
@@ -186,7 +168,6 @@
           });
         },
         current(){ return this.view[this.idx] || null; },
-        tokens(){ return this.current ? tokenize(this.current.text) : []; },
         allTags(){
           const s = new Set();
           this.all.forEach(p=>p.tags.forEach(t=>s.add(t)));
@@ -196,7 +177,6 @@
       watch:{
         query(){ this.idx = 0; },
         activeTag(){ this.idx = 0; },
-        current(){ this.stop(); this.activeToken = -1; },
       },
       methods:{
         tagLabel(t){
@@ -206,26 +186,6 @@
         shuffle(){ if(this.view.length) this.idx = randInt(this.view.length); },
         prev(){ if(!this.view.length) return; this.idx = (this.idx - 1 + this.view.length) % this.view.length; },
         next(){ if(!this.view.length) return; this.idx = (this.idx + 1) % this.view.length; },
-        toggleSpeak(){ this.speaking ? this.stop() : this.speak(); },
-        speak(){
-          if(!('speechSynthesis' in window) || this.ttsUnsupported){ this.ttsUnsupported = true; return; }
-          if(!this.current) return;
-          window.speechSynthesis.cancel();
-          const u = new SpeechSynthesisUtterance(this.current.text);
-          u.lang = 'en-US'; u.rate = 0.92;
-          u.onboundary = (e)=>{
-            const i = this.tokens.findIndex(t => e.charIndex >= t.start && e.charIndex < t.end);
-            if(i>=0) this.activeToken = i;
-          };
-          u.onend = ()=>{ this.speaking=false; this.activeToken=-1; };
-          u.onerror = ()=>{ this.speaking=false; this.activeToken=-1; };
-          this.speaking = true; this.activeToken = -1;
-          window.speechSynthesis.speak(u);
-        },
-        stop(){
-          if('speechSynthesis' in window) window.speechSynthesis.cancel();
-          this.speaking = false; this.activeToken = -1;
-        },
         async load(){
           const url = `quotes.json?v=${APP_VERSION}`;
           let lastErr = null;
@@ -244,8 +204,6 @@
         },
       },
       mounted(){
-        // 微信内置浏览器对 speechSynthesis 支持差，直接标记不可用
-        if(/MicroMessenger/i.test(navigator.userAgent)) this.ttsUnsupported = true;
         this.load();
       },
     }).mount('#app');

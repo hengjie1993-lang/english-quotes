@@ -1,5 +1,5 @@
-const CACHE = 'english-v1';
-const APP_VERSION = '1';
+const CACHE = 'english-v2';
+const APP_VERSION = '2';
 const ASSETS = [
   './',
   './index.html',
