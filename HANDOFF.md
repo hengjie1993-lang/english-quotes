@@ -167,3 +167,32 @@ curl -s "https://<账号>.github.io/english-quotes/quotes.json?v=1" | python -c 
 - 功能：随机起手、搜索（英/中/作者含中文名）、主题标签筛选、隐藏翻译。
 - v2 移除 TTS 朗读；v3 优化缓存策略；v4 新增**作者中文名**（`authorZh` 字段）+ 重做视觉；**v5 把 SW 改成透明穿透并激活即强刷所有页面，根治「手机端作者名不显示 / 升级后仍显示旧版」的缓存陷阱**；**v6 将中文名「英句囊」正式更名为英文品牌 Maxim（英语里"箴言/格言"的标准原生词），同步更新 `<title>`、页头品牌字与 `manifest.webmanifest` 的 name/short_name**。
 - 仓库公开 + MIT 许可 + 仅你有写权限。
+
+---
+
+## 10. 经验复盘 / Lessons Learned
+
+> 给「接手即改」的后来者（含换 AI 工具）看的硬经验，按价值排序。
+
+1. **Service Worker 缓存陷阱（本项目头号坑，poetry-reader / english-quotes 都踩过）**
+   - 现象：桌面正常、手机却困在旧版 HTML（如 v4 加了作者中文名，桌面有、手机没有）。根因是旧 SW 对 `index.html` 用 **cache-first**，把旧页面钉死在缓存，即使部署了新版也继续吐旧 HTML。
+   - 治本（v5 起）：`sw.js` **改为「透明穿透」**——不缓存任何资源，`fetch` 直接转发网络；`install` 立即 `skipWaiting`；`activate` 清空旧缓存 + `clients.claim()` + **强制 `clients.matchAll().forEach(c => c.navigate(c.url))` 刷新所有已开页面**。代价是失去离线能力，但对「随手打开」类小工具，永远最新远比离线重要。
+   - 铁律：纯展示型、不依赖离线的站点，**SW 不要做 cache-first**。
+
+2. **命名要回到内容的文化语境**
+   - 给英文应用取名，不要套中式审美（「英句囊 / 金句囊 / 英华录 / 拾句」全是汉字意象套英文内容）。用户明确指正：要做英文金句，名字应符合英文文化。
+   - 最终定 **Maxim**（英语里「箴言 / 格言 / 准则」的标准原生词，单字品牌感强）。同理：做哪国语言内容，就用哪国语言 / 文化命名。
+
+3. **版本铁律（绕开手机缓存的唯一手段）**
+   - 改 `index.html` / `quotes.json` / `sw.js` 必须同步升 `APP_VERSION`（index.html 常量）+ `quotes.json` 的 `?v=N` 戳。
+   - 微信内置浏览器：**禁用 SW**（UA 判定后不注册），微信对 SW 支持差、缓存陷阱多。
+   - 隐藏翻译用 `v-if` 销毁节点，不要 `visibility:hidden`（后者对带固定 height/margin 的元素会留白）。
+
+4. **Windows 下 `git push` 偶发 SSL 握手失败**
+   - 报错 `schannel: failed to receive handshake` → 加 `-c http.sslBackend=openssl` 即可（走 Git 自带 openssl 后端）：`git -c http.sslBackend=openssl push origin main`。
+
+5. **GitHub 公开 ≠ 可写，token 安全**
+   - public 仓库只有 owner 能改文件；外人改需 fork + PR 经你合并。token 不写进 remote URL，push 走 credential / PAT，安全无泄露风险。
+
+6. **脚本化校验数据，别靠肉眼**
+   - v4 后用 Python 校验「33 位作者中文名无遗漏、quotes.json 字段完整」，比肉眼可靠；加新句子时先跑校验再提交。
